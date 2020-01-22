@@ -20,7 +20,7 @@ from keras.constraints import maxnorm
 from keras import backend as k
 k.set_image_data_format('channels_first')
 
-# As the daata is already sorted and split into test , train and validation folders (using zshell) now it's just to
+# As the data is already sorted and split into test , train and validation folders (using zshell) now it's just to
 # feed in those directories directly
 
 train_dir = "~/chest_xray/train"
@@ -85,7 +85,7 @@ reduce_lr = ReduceLROnPlateau(monitor='val_accuracy',factor=0.1,patience=1,verbo
 #using InceptionV3 weights
 # Checkpoints are used to monitor and save best model and avoid val_acc drop due to overfitting
 
-weights_path = '~/Pneumonia_Diagnosis_XrayData/inception_v3_weights.h5'
+weights_path = '~/inception_v3_weights.h5'
 check_point = ModelCheckpoint(weights_path,monitor='val_acuracy',verbose=1,save_best_only=True,mode='max')
 
 #reshape data according to weights
