@@ -1,8 +1,9 @@
 
 Precision = True Positive / (True Positive + False Positive)
-
-here Precision = 371/(371+92) * 100
-               = 80.13%
+          
+          = 371/(371+92) * 100
+          
+          = 80.13%
                
 Recall = True Positive / (True Positive + False Negative)
        
